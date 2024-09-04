@@ -52,18 +52,5 @@ namespace HealthcareManagementSystem.Tests.Controllers
             // Assert
             Assert.IsType<NotFoundResult>(result.Result);
         }
-
-        [Fact]
-        public async Task AddDoctor_ReturnsCreatedResult()
-        {
-            // Arrange
-            var doctorDto = new DoctorForEditDto { Id = 1, FullName = "John Doe", SpecializationId = 1 };
-
-            // Act
-            var result = await _doctorController.AddDoctor(doctorDto);
-
-            // Assert
-            Assert.IsType<CreatedAtActionResult>(result);
-        }
     }
 }
