@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Core", "HealthcareManagementSystem.Core\HealthcareManagementSystem.Core.csproj", "{C7EF7EC6-3D8D-457A-8216-7A37A0981566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Application", "HealthcareManagementSystem.Application\HealthcareManagementSystem.Application.csproj", "{5A1CCA04-613A-4DD3-9E09-B941386E5E47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C7EF7EC6-3D8D-457A-8216-7A37A0981566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7EF7EC6-3D8D-457A-8216-7A37A0981566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7EF7EC6-3D8D-457A-8216-7A37A0981566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1CCA04-613A-4DD3-9E09-B941386E5E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1CCA04-613A-4DD3-9E09-B941386E5E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1CCA04-613A-4DD3-9E09-B941386E5E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1CCA04-613A-4DD3-9E09-B941386E5E47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
