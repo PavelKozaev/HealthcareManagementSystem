@@ -32,6 +32,13 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Apply migrations automatically in a controlled manner
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<HealthcareDbContext>();
+    dbContext.Database.Migrate(); // Apply migrations
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
