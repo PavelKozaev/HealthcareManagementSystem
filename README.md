@@ -56,24 +56,24 @@ The API provides endpoints for managing doctors and patients, including support 
 
 DoctorController
 
-GET /api/Doctor?pageNumber={pageNumber}&pageSize={pageSize}&sortBy={field}: Get a paginated and sorted list of doctors.
-GET /api/Doctor/{id}: Get a doctor's details by ID (returns an editable object with related IDs).
-POST /api/Doctor: Add a new doctor.
-PUT /api/Doctor/{id}: Update an existing doctor.
-DELETE /api/Doctor/{id}: Delete a doctor by ID.
+    GET /api/Doctor?pageNumber={pageNumber}&pageSize={pageSize}&sortBy={field}: Get a paginated and sorted list of doctors.
+    GET /api/Doctor/{id}: Get a doctor's details by ID (returns an editable object with related IDs).
+    POST /api/Doctor: Add a new doctor.
+    PUT /api/Doctor/{id}: Update an existing doctor.
+    DELETE /api/Doctor/{id}: Delete a doctor by ID.
 
 PatientController
 
-GET /api/Patient?pageNumber={pageNumber}&pageSize={pageSize}&sortBy={field}: Get a paginated and sorted list of patients.
-GET /api/Patient/{id}: Get a patient's details by ID (returns an editable object with related IDs).
-POST /api/Patient: Add a new patient.
-PUT /api/Patient/{id}: Update an existing patient.
-DELETE /api/Patient/{id}: Delete a patient by ID.
+    GET /api/Patient?pageNumber={pageNumber}&pageSize={pageSize}&sortBy={field}: Get a paginated and sorted list of patients.
+    GET /api/Patient/{id}: Get a patient's details by ID (returns an editable object with related IDs).
+    POST /api/Patient: Add a new patient.
+    PUT /api/Patient/{id}: Update an existing patient.
+    DELETE /api/Patient/{id}: Delete a patient by ID.
 
 ## Technologies Used
 
-ASP.NET Core 6.0 - Web API framework
-Entity Framework Core 6.0 - ORM for database access
-SQL Server - Relational database management system
-AutoMapper - Object-Object Mapper for DTOs
-Swagger/OpenAPI - API documentation
+    ASP.NET Core 6.0 - Web API framework
+    Entity Framework Core 6.0 - ORM for database access
+    SQL Server - Relational database management system
+    AutoMapper - Object-Object Mapper for DTOs
+    Swagger/OpenAPI - API documentation
