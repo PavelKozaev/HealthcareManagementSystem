@@ -6,7 +6,7 @@ namespace HealthcareManagementSystem.Application.Services.Interfaces
     {
         Task<IEnumerable<PatientDto>> GetPatientsAsync(int pageNumber, int pageSize, string sortBy);
         Task<PatientForEditDto> GetPatientByIdAsync(int id);
-        Task AddPatientAsync(PatientForEditDto patientDto);
+        Task<PatientDto> AddPatientAsync(PatientForCreateDto patientDto);
         Task UpdatePatientAsync(PatientForEditDto patientDto);
         Task DeletePatientAsync(int id);
     }

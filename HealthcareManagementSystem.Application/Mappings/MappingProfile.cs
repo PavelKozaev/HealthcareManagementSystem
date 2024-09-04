@@ -14,11 +14,13 @@ namespace HealthcareManagementSystem.Application.Mappings
                 .ForMember(dest => dest.PlotNumber, opt => opt.MapFrom(src => src.Plot.Number));
 
             CreateMap<Doctor, DoctorForEditDto>().ReverseMap();
+            CreateMap<Doctor, DoctorForCreateDto>().ReverseMap();
 
             CreateMap<Patient, PatientDto>()
                 .ForMember(dest => dest.PlotNumber, opt => opt.MapFrom(src => src.Plot.Number));
 
-            CreateMap<Patient, PatientForEditDto>().ReverseMap();            
+            CreateMap<Patient, PatientForEditDto>().ReverseMap();
+            CreateMap<Patient, PatientForCreateDto>().ReverseMap();
         }
     }
 }

@@ -37,10 +37,15 @@ namespace HealthcareManagementSystem.API.Controllers
 
         // POST: api/Doctor
         [HttpPost]
-        public async Task<ActionResult> AddDoctor([FromBody] DoctorForEditDto doctorDto)
+        public async Task<ActionResult> AddDoctor([FromBody] DoctorForCreateDto doctorDto)
         {
-            await _doctorService.AddDoctorAsync(doctorDto);
-            return CreatedAtAction(nameof(GetDoctor), new { id = doctorDto.Id }, doctorDto);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var createdDoctor = await _doctorService.AddDoctorAsync(doctorDto);
+            return CreatedAtAction(nameof(GetDoctor), new { id = createdDoctor.Id }, createdDoctor);
         }
 
         // PUT: api/Doctor/5

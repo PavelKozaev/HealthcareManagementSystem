@@ -37,10 +37,10 @@ namespace HealthcareManagementSystem.API.Controllers
 
         // POST: api/Patient
         [HttpPost]
-        public async Task<ActionResult> AddPatient([FromBody] PatientForEditDto patientDto)
+        public async Task<ActionResult> AddPatient([FromBody] PatientForCreateDto patientDto)
         {
-            await _patientService.AddPatientAsync(patientDto);
-            return CreatedAtAction(nameof(GetPatient), new { id = patientDto.Id }, patientDto);
+            var createdPatient = await _patientService.AddPatientAsync(patientDto);
+            return CreatedAtAction(nameof(GetPatient), new { id = createdPatient.Id }, createdPatient);
         }
 
         // PUT: api/Patient/5

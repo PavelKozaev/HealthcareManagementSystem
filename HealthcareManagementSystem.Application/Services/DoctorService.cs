@@ -29,10 +29,11 @@ namespace HealthcareManagementSystem.Application.Services
             return _mapper.Map<DoctorForEditDto>(doctor);
         }
 
-        public async Task AddDoctorAsync(DoctorForEditDto doctorDto)
+        public async Task<DoctorDto> AddDoctorAsync(DoctorForCreateDto doctorDto) 
         {
             var doctor = _mapper.Map<Doctor>(doctorDto);
             await _doctorRepository.AddAsync(doctor);
+            return _mapper.Map<DoctorDto>(doctor); 
         }
 
         public async Task UpdateDoctorAsync(DoctorForEditDto doctorDto)

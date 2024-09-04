@@ -3,6 +3,7 @@ using HealthcareManagementSystem.Application.DTOs;
 using HealthcareManagementSystem.Application.Services.Interfaces;
 using HealthcareManagementSystem.Core.Entities;
 using HealthcareManagementSystem.Core.Interfaces;
+using System.Numerics;
 
 namespace HealthcareManagementSystem.Application.Services
 {
@@ -29,10 +30,11 @@ namespace HealthcareManagementSystem.Application.Services
             return _mapper.Map<PatientForEditDto>(patient);
         }
 
-        public async Task AddPatientAsync(PatientForEditDto patientDto)
+        public async Task<PatientDto> AddPatientAsync(PatientForCreateDto patientDto)
         {
             var patient = _mapper.Map<Patient>(patientDto);
             await _patientRepository.AddAsync(patient);
+            return _mapper.Map<PatientDto>(patient);
         }
 
         public async Task UpdatePatientAsync(PatientForEditDto patientDto)
