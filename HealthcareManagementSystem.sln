@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Api", "HealthcareManagementSystem.Api\HealthcareManagementSystem.Api.csproj", "{812FE957-7F4B-4858-A70E-01B8C598CEED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareManagementSystem.Api", "HealthcareManagementSystem.Api\HealthcareManagementSystem.Api.csproj", "{812FE957-7F4B-4858-A70E-01B8C598CEED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Core", "HealthcareManagementSystem.Core\HealthcareManagementSystem.Core.csproj", "{C7EF7EC6-3D8D-457A-8216-7A37A0981566}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareManagementSystem.Core", "HealthcareManagementSystem.Core\HealthcareManagementSystem.Core.csproj", "{C7EF7EC6-3D8D-457A-8216-7A37A0981566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Application", "HealthcareManagementSystem.Application\HealthcareManagementSystem.Application.csproj", "{5A1CCA04-613A-4DD3-9E09-B941386E5E47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareManagementSystem.Application", "HealthcareManagementSystem.Application\HealthcareManagementSystem.Application.csproj", "{5A1CCA04-613A-4DD3-9E09-B941386E5E47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Infrastructure", "HealthcareManagementSystem.Infrastructure\HealthcareManagementSystem.Infrastructure.csproj", "{E84CDCED-FB9C-49F5-A710-359B2A8AFCE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareManagementSystem.Infrastructure", "HealthcareManagementSystem.Infrastructure\HealthcareManagementSystem.Infrastructure.csproj", "{E84CDCED-FB9C-49F5-A710-359B2A8AFCE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthcareManagementSystem.Tests", "HealthcareManagementSystem.Tests\HealthcareManagementSystem.Tests.csproj", "{1911B7C2-A0D7-434E-88BB-4ABD22B6688A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthcareManagementSystem.Tests", "HealthcareManagementSystem.Tests\HealthcareManagementSystem.Tests.csproj", "{1911B7C2-A0D7-434E-88BB-4ABD22B6688A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7601CBF6-C75E-4DAC-8234-225FAFCC5F07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{227C6F18-9489-4C4A-B85A-12C483D0E372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{812FE957-7F4B-4858-A70E-01B8C598CEED} = {7601CBF6-C75E-4DAC-8234-225FAFCC5F07}
+		{C7EF7EC6-3D8D-457A-8216-7A37A0981566} = {7601CBF6-C75E-4DAC-8234-225FAFCC5F07}
+		{5A1CCA04-613A-4DD3-9E09-B941386E5E47} = {7601CBF6-C75E-4DAC-8234-225FAFCC5F07}
+		{E84CDCED-FB9C-49F5-A710-359B2A8AFCE2} = {7601CBF6-C75E-4DAC-8234-225FAFCC5F07}
+		{1911B7C2-A0D7-434E-88BB-4ABD22B6688A} = {227C6F18-9489-4C4A-B85A-12C483D0E372}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {757D2CAF-8C77-490F-8B81-06EAF44B111A}
