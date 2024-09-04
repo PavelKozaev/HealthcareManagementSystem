@@ -14,21 +14,21 @@ A RESTful Web API built with ASP.NET Core for managing doctors and patients in a
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) or any other IDE that supports .NET 6 development
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) or any other IDE that supports .NET 8 development
 
 ## Setup Instructions
 
 	1. **Clone the Repository:**	
 	
-   git clone https://github.com/PavelKozaev/healthcare-management-system.git
-   cd healthcare-management-system
+    git clone https://github.com/PavelKozaev/healthcare-management-system.git
+    cd healthcare-management-system
 
 	2. **Configure the Database:**
 
 	Update the DefaultConnection string in the appsettings.json file located in the HealthcareManagementSystem.API project with your SQL Server connection details.
 	
 	"ConnectionStrings": {
-  "DefaultConnection": "Server=YOUR_SERVER;Database=HealthcareDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+	"DefaultConnection": "Server=YOUR_SERVER;Database=HealthcareDB;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
 
 	3. **Run the Application:**
@@ -39,7 +39,7 @@ A RESTful Web API built with ASP.NET Core for managing doctors and patients in a
 
 ## Database Migrations
 
-The application uses Entity Framework Core for database management. Migrations are automatically applied when the application starts. If you need to add a new migration manually, follow these steps:
+    The application uses Entity Framework Core for database management. Migrations are automatically applied when the application starts. If you need to add a new migration manually, follow these steps:
 
 	1. Add Migration:
 
